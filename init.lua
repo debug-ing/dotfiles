@@ -1,6 +1,7 @@
 -- pre install
 -- go install golang.org/x/tools/gopls@latest
 -- export PATH=$PATH:$HOME/go/bin
+-- https://github.com/akinsho/toggleterm.nvim
 -- Bootstrap lazy.nvim if not installed
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
