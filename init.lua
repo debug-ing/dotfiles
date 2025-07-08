@@ -31,7 +31,7 @@ require("lazy").setup({
 
   -- File Explorer
   { "nvim-tree/nvim-tree.lua" },
-  -- codium
+  -- codium https://github.com/Exafunction/windsurf.nvim
   "Exafunction/codeium.vim",
 })
 
