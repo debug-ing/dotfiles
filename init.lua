@@ -33,6 +33,7 @@ require("lazy").setup({
   { "nvim-tree/nvim-tree.lua" },
   -- codium https://github.com/Exafunction/windsurf.nvim
   "Exafunction/codeium.vim",
+  { "github/copilot.vim" },
 })
 
 -- Basic LSP setup (example: gopls for Go)
@@ -64,6 +65,9 @@ require("nvim-tree").setup()
 
 -- Basic keymap for nvim-tree toggle
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+
+vim.g.copilot_no_tab_map = true
+vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { expr = true, silent = true })
 
 -- Some nice options
 vim.o.number = true
