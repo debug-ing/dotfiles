@@ -3,6 +3,10 @@
 -- export PATH=$PATH:$HOME/go/bin
 -- https://github.com/akinsho/toggleterm.nvim
 -- https://github.com/akinsho/bufferline.nvim
+-- https://github.com/folke/which-key.nvim
+-- https://github.com/nvim-telescope/telescope.nvim
+-- https://github.com/ahmedkhalf/project.nvim
+-- https://github.com/folke/todo-comments.nvim
 -- Bootstrap lazy.nvim if not installed
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
